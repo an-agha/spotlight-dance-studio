@@ -402,7 +402,11 @@ footer div{
 }
 
 @media screen  and (min-width:900px){
+    .header-container{
+        width: 30%;
+    }
     .header-container h1{
+        width: 80%;
         font-size: 90px;
     }
     .header-container button{
