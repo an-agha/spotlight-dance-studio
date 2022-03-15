@@ -94,12 +94,26 @@ h2{
     line-height: 1.7;
     font-family: Roboto+Mono;
 }
+.sub-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sub-cont button{
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-top: 3vh;
+}
+.sub-cont button a{
+    text-decoration: none;
+    font-family: Righteous;
+    color: #EDEDED;
+}
 .benifit-img{
     width: 100%;
     height: 35vh;
-    /* background-image: url('./image/benifits.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
+    
 
     display: flex;
     flex-direction: column;
@@ -118,6 +132,7 @@ h2{
     backdrop-filter: blur(20px);
     border-radius: 10px;
     font-family: Roboto+Mono;
+    font-weight: 600;
 
 }
 .class-container{
@@ -166,11 +181,12 @@ h3{
     height: 100%;
     border-radius: 50px 0 50px 0;
 }
-.instructor div{
+.abt-insructor{
     width: 100%;
     height: 10vh;
-    color: transparent;
-    background-color: transparent;
+    display: none;
+    color: #EDEDED;
+    background-color: #DA0037;
     position: relative;
     bottom: 10vh;
     border-radius: 0 0 50px 0;
@@ -179,12 +195,12 @@ h3{
     font-weight: 500;
 
 }
-.instructor div:hover{
+.instructor img:hover + .abt-insructor {
     cursor: pointer;
     display: block;
-    color: #EDEDED;
-    background-color: #DA0037;
+  
 }
+   
 .get-in-touch{
     width: 100%;
     display: flex;
@@ -233,6 +249,8 @@ footer{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 5vh;
+    border-top: 1px solid #DA0037 ;
 }
 footer div{
     width: 100%;
@@ -242,7 +260,7 @@ footer div{
 }
 .ft-hd{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #EDEDED;
     margin-bottom: 2vh;
 }
@@ -250,10 +268,217 @@ footer div{
     font-size: 12px;
     color: #EDEDED;
     margin-bottom: 1vh;
+ 
 }
 .icon-class{
     width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (min-width:640px){
+    .header-container{
+        width: 40%;
+        padding-top: 7vh;
+        
+    }
+    .header-container h1{
+        font-size: 50px;
+    }
+    .header-container img{
+        display: none;
+    }
+    .header-container button{
+        width: 22vw;
+        height: 8vh;
+        margin-top: 4vh;
+    }
+    .header-image{
+        display: block;
+        width: 45%;
+    }
+    .header-image img{
+        width: 100%;
+        height: 100%;
+    }
+    /* content */
+
+    .sub-container{
+        justify-content: space-evenly;
+    }
+    .margn-top{
+        margin-top: 12vh;
+    }
+    .sub-img{
+        width: 50%;
+    }
+    .sub-cont{
+        width: 40%;
+    } 
+    .sub-cont button{
+        width: 25vw;
+        height: 8vh;
+        margin-top: 5vh;
+    }
+    h2{
+        width: 60%;
+        margin: 15vh 0 8vh 0;
+    }
+    .benifits-head{
+        width: 40%;
+    }
+    .benifit-img{
+        width: 50%;
+        height: 70vh;
+        background-image: url('./image/benifits.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: flex-start;
+    } 
+    .benifit-cont{
+        height: 13vh;
+        margin-left: -13vw;
+    }
+    .class-container{
+        width: 45%;
+        height: 110vh;
+    }
+    .class-container div button{
+        width: 18vw;
+        height: 8vh;
+    }
+    .class-container span{
+        margin-bottom: 6vh;
+    }
+
+    /* instructor */
+    .instructor-cont{
+        justify-content: space-evenly;
+    }
+    .instructor{
+        width: 40%;
+        height: 90vh;
+        margin-bottom: 10vh;
+    }
+    .abt-insructor{
+        height: 15vh;
+        bottom: 15vh;
+    }
+    /* touch with us */
+    .get-in-touch{
+        justify-content: space-evenly;
+    }
+    .get-in-touch div {
+        width: 25%;
+    }
+    form{
+        margin-top: 10vh;
+    }
+    form input{
+        width: 55%;
+        height: 10vh;
+        margin-bottom: 4vh;
+    }
+    form textarea{
+        width: 55%;
+        height: 20vh;
+        margin-bottom: 8vh;
+    }
+    form button{
+        width: 20vw;
+        height: 8vh;
+    }
+    footer{
+        justify-content: space-evenly;
+        padding-top: 10vh;
+    }
+    footer div{
+        width: 30%;
+    }
+    .ft-cont , .ft-hd{
+        margin-bottom: 4vh;
+    }
+}
+
+@media screen  and (min-width:900px){
+    .header-container h1{
+        font-size: 90px;
+    }
+    .header-container button{
+        width: 12vw;
+        height: 5vh;
+    }
+    .header-image img{
+        width: 90%;
+        height: 90%;
+    }
+    .sub-container{
+        width: 80%;
+        margin-top: 8vh;
+
+    }
+    h2{
+        width: 85%;
+        font-size: 72px;
+        margin: 6vh 0 3vh 0;
+    }
+    .sub-content{
+        font-size: 17px;
+    }
+    .sub-img img{
+        width: 90%;
+        height: 90%;
+    }
+    .sub-cont button{
+        width: 13vw;
+        height: 4vh;
+    }
+    .benifit-cont{
+        width: 40%;
+        height: 7vh;
+        margin-left: -7vw;
+    }
+    .benifit-img{
+        width: 40%;
+        height: 70vh;
+    }
+    .class-container {
+        height: 45vh;
+    }
+    .class-container div button {
+        width: 12vw;
+        height: 4vh;
+    }
+    .instructor-cont{
+        justify-content: space-evenly;
+    }
+    .instructor{
+        width: 30%;
+        height: 60vh;
+    }
+    .abt-insructor{
+        height: 10vh;
+        bottom: 10vh;
+    }
+    form input{
+        width: 45%;
+        height: 5vh;
+        margin-bottom: 2vh;
+    }
+    form textarea{
+        width: 45%;
+        height: 10vh;
+        margin-bottom: 4vh;
+    }
+    form button{
+        width: 10vw;
+        height: 5vh;
+    }
+    .ft-hd{
+        font-size: 18px;
+    }
+    .ft-cont {
+        font-size: 15px;
+    }
 }
