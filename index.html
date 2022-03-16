@@ -10,9 +10,23 @@
 <body>
     <!-- nav -->
     <nav>
-
+        <div class="logo">
+            <img src="./image/Spotlight.png" alt="">
+        </div>
+        <div class="hamborger" onclick="showItem()">
+            <i class="fa-solid fa-bars fa-5X nav-icon"></i>
+        </div>
+        <div class="nav-item" id="nav-show">
+            <ul>
+                <li onclick="hide()"><a href="#home"></a>Home</li>
+                <li onclick="hide()"><a href="#about"></a>About Us</li>
+                <li onclick="hide()"><a href="#class"></a>Our Classes</li>
+                <li onclick="hide()"><a href="#instuctor"></a>Team</li>
+                <li onclick="hide()"><a href="#contact"></a>Contact Us</li>
+            </ul>
+        </div>
     </nav>
-    <header>
+    <header id="home">
         <div class="header-container">
             <img src="./image/header-image.png" alt="header-image">
             <h1 class="white-content">
@@ -25,7 +39,7 @@
         </div>
     </header>
     <div class="main-container">
-        <div class="sub-container margn-top">
+        <div class="sub-container margn-top" id="about">
             <div class="sub-img">
                 <img src="./image/aboutus.png" alt="about-us-container">
             </div>
@@ -54,7 +68,7 @@
             </div>
         </div>
 
-        <div class="sub-container margn-top">
+        <div class="sub-container margn-top" id="class">
             <div class="sub-img">
                 <img src="./image/move with us.png" alt="">
             </div>
@@ -137,19 +151,19 @@
             </div>
         </div>
 
-        <div class="sub-container margn-top">
+        <div class="sub-container margn-top" id="contact">
             <h2 style="width: 100%; text-align: center; margin-top: 0;">GET IN TOUCH</h2>
             <div class="get-in-touch">
                 <div>
-                    <i class="fa-solid fa-location-dot icon"></i>
+                    <a href="https://goo.gl/maps/j2qF1xKMcSGSYeMz6"><i class="fa-solid fa-location-dot icon"></i></a>
                     <span>102 Street,Kochi</span>
                 </div>
                 <div>
-                    <i class="fa-solid fa-phone icon"></i> 
+                   <a href="tel:+91 9087658976"> <i class="fa-solid fa-phone icon"></i> </a>
                     <span>+91 9087658976</span>
                 </div>
                 <div>
-                    <i class="fa-solid fa-envelope icon"></i>
+                    <a href="mailto:bestdancer@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
                     <span>bestdancer@gmail.com</span>
                 </div>
 
@@ -170,19 +184,21 @@
             </div>
             <div>
                 <span class="ft-hd">Contact Us</span>
-                <span class="ft-cont">102 Street,Kochi</span>
-                <span class="ft-cont">+91 9087658976</span>
-                <span class="ft-cont">bestdancer@gmail.com</span>
+                <span class="ft-cont"><a href="https://goo.gl/maps/j2qF1xKMcSGSYeMz6">102 Street,Kochi</a></span>
+                <span class="ft-cont"><a href="tel:+91 9087658976">+91 9087658976</a></span>
+                <span class="ft-cont"><a href="mailto:bestdancer@gmail.com">bestdancer@gmail.com</a></span>
             </div>
             <div>
                 <span class="ft-hd">Follow Us</span>
                 <div class="icon-class">
-                    <i class="fa-brands fa-facebook-f icon"></i>
-                    <i class="fa-brands fa-instagram icon"></i>
-                    <i class="fa-brands fa-twitter icon"></i>
+                    <a href="https://www.google.com/search?q=fb&oq=fb&aqs=chrome..69i57j69i59j0i512j46i199i291i433i512l2j69i60l3.4731j0j7&sourceid=chrome&ie=UTF-8"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://www.instagram.com/instagram/?hl=en"><i class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://twitter.com/explore"><i class="fa-brands fa-twitter icon"></i></a>
                 </div>
             </div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

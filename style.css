@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #EDEDED;
+}
 .white-content{
     color: #EDEDED;
     line-height: 1.5;
@@ -24,14 +28,74 @@ button{
 }
 nav{
     width: 100%;
-    height: 10vh;
     background-color: #171717;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    /* width: 50%;
+    height: 50%; */
+}
+.hamborger{
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-icon{
+    color: #DA0037;
+}
+.nav-item{
+    width: 100%;
+    height: 90vh;
+    display: none;
+    
+}
+.nav-class{
+    display: flex;
+}
+.nav-item ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+ul li{
+    width: 40%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EDEDED;
+    
+    margin-bottom:4vh;
+}
+ul li:hover{
+    color: #DA0037;
+    background-color: #EDEDED;
+    border-radius: 5px;
 }
 header{
     width: 100%;
+    margin-top: 10vh;
     /* height: 100vh; */
     background-color: #171717;
-    margin-top:-1vh;
+    /* margin-top:-1vh; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -127,7 +191,7 @@ h2{
     justify-content: center;
     align-items: center;
     color: #DA0037;
-    background: rgba(255, 242, 242, 0.07);
+    background: #ededed79;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
     border-radius: 10px;
@@ -277,7 +341,36 @@ footer div{
     justify-content: space-between;
 }
 
-@media screen and (min-width:640px){
+@media screen and (min-width:550px){
+    .logo{
+        width: 10%;
+        height: 15vh;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .hamborger{
+        width: 10%;
+        display: none;
+    }
+    .nav-item{
+        width: 60%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .nav-item ul{
+        height: 15vh;
+        flex-direction: row;
+    }
+    ul li{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    header{
+        margin-top: 15vh;
+    }
     .header-container{
         width: 40%;
         padding-top: 7vh;
@@ -333,12 +426,16 @@ footer div{
         height: 70vh;
         background-image: url('./image/benifits.png');
         background-size: cover;
+        background-position: bottom;
         background-repeat: no-repeat;
         align-items: flex-start;
     } 
     .benifit-cont{
         height: 13vh;
         margin-left: -13vw;
+        background: rgba(255, 242, 242, 0.07);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(20px);
     }
     .class-container{
         width: 45%;
@@ -358,7 +455,7 @@ footer div{
     }
     .instructor{
         width: 40%;
-        height: 90vh;
+        height: 70vh;
         margin-bottom: 10vh;
     }
     .abt-insructor{
@@ -402,6 +499,12 @@ footer div{
 }
 
 @media screen  and (min-width:900px){
+    .nav-item{
+        width: 35%;
+    }
+    ul li{
+        height: 4vh;
+    }
     .header-container{
         width: 28%;
     }
@@ -459,7 +562,7 @@ footer div{
     }
     .instructor{
         width: 30%;
-        height: 60vh;
+        height: 70vh;
     }
     .abt-insructor{
         height: 10vh;
@@ -485,4 +588,7 @@ footer div{
     .ft-cont {
         font-size: 15px;
     }
+    .icon-class{
+        width: 20%;
+    } 
 }
