@@ -497,7 +497,7 @@ footer div{
         margin-bottom: 4vh;
     }
 }
-
+/* web view */
 @media screen  and (min-width:900px){
     .nav-item{
         width: 35%;
