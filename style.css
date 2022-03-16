@@ -499,11 +499,28 @@ footer div{
 }
 /* web view */
 @media screen  and (min-width:900px){
+    .logo{
+        width: 40%;
+        height: 10vh;
+    }
+    .logo img{
+        width: 40%;
+    }
     .nav-item{
-        width: 35%;
+        width: 40%;
+        height: 10vh;
+    }
+    .nav-item ul{
+        height: 10vh;
+        justify-content: space-evenly;
     }
     ul li{
         height: 4vh;
+        font-size: 16px;
+        
+    }
+    header{
+        margin-top: 10vh;
     }
     .header-container{
         width: 28%;
@@ -552,6 +569,7 @@ footer div{
     }
     .class-container {
         height: 45vh;
+        font-size: 17px;
     }
     .class-container div button {
         width: 12vw;
@@ -572,11 +590,13 @@ footer div{
         width: 45%;
         height: 5vh;
         margin-bottom: 2vh;
+        padding-left: 1vw;
     }
     form textarea{
         width: 45%;
         height: 10vh;
         margin-bottom: 4vh;
+        padding-left: 1vw;
     }
     form button{
         width: 10vw;
