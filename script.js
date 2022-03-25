@@ -8,3 +8,8 @@ function hide(){
     var para = document.getElementById("nav-show");
     para.classList.toggle("nav-class");
 }
+
+const demo = document.getElementById('demoClass');
+demo.addEventListener('click', function(){
+    location.href="https://www.youtube.com/results?search_query=team+naach";
+})
